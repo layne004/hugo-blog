@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+locale = 'zh-cn'
+title = 'layne - 个人网站'
+theme = 'hugo-book'
+
+copyright = "Copyright© 2026 Layne's Blog"
+
+disablePathToLower = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
+  [markup.highlight]
+    style = "base16-snazzy"
+	
+[[menu.home]]
+name = "Documentation"
+pageRef = "/docs/"
+weight = 10
+
+[[menu.home]]
+  name = "Github"
+  url = "https://github.com/alex-shpak/hugo-book/"
+  weight = 30
