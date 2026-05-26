@@ -1,0 +1,128 @@
+/* 粒子背景 */
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: #f5f5f5;
+}
+
+/* 主区域 */
+.hero-container {
+  position: relative;
+  min-height: 90vh;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: clip;
+}
+
+/* 半圆背景 */
+.hero-bg {
+  position: absolute;
+  width: 160vw;
+  height: 900px;
+  background: #ececec;
+  border-radius: 50%;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background:
+    linear-gradient(
+      180deg,
+      #d8d8d8 0%,
+      #e3e3e3 8%,
+      #efefef 15%,
+      #f7f7f7 77%,
+      #ffffff 100%
+    );
+  /* 去掉明显描边 */
+  border: 2px solid #d8d8d8;
+
+  /* 更柔和阴影 */
+  box-shadow:
+    inset 0 22px 36px rgba(255, 255, 255, 0.35),
+    0 10px 40px rgba(0, 0, 0, 0.03);
+
+  /* 核心：底部渐隐 */
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: -1;
+}
+
+/* 内容 */
+.hero-content {
+  text-align: center;
+  margin-top: -120px;
+}
+
+/* 小标题 */
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* 主标题 */
+.hero-title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+/* 描述 */
+.hero-description {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/* 按钮区域 */
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 按钮 */
+.hero-btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+/* 主按钮 */
+.hero-btn.primary {
+  background: #000;
+  color: #fff;
+}
+
+/* 次按钮 */
+.hero-btn.secondary {
+  border: 1px solid #bbb;
+  color: #555;
+  background: white;
+}
+
+/* hover */
+.hero-btn:hover {
+  transform: translateY(-2px);
+}

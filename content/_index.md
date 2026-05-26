@@ -1,17 +1,33 @@
 ---
 layout: landing
+title: Home
 ---
 
-<div class="book-hero">
+<div id="particles-js"></div>
 
-# layne's website {anchor=false}
-Hello, this is layne!
-<br />
-该网站使用hugo + github搭建，主要用于记录和分享layne的学习博客和个人思考。
-<br />
-{{<button href="/docs/">}}Explore{{</button>}}
+<div class="hero-container">
+
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+
+  <div class="hero-subtitle">
+    Hello, I am
+  </div>
+
+  <h1 class="hero-title">
+    LAYNE
+  </h1>
+
+  <div class="hero-description">
+    分享技术、学习记录与个人思考。
+  </div>
+
+  <div class="hero-buttons">
+    {{<button href="/docs/">}}Read My Blog{{</button>}}
+    {{<button href="/posts/">}}View My Work{{</button>}}
+  </div>
+
+  </div>
 
 </div>
-
-## 时间线
----
