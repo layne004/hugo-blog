@@ -1,6 +1,6 @@
 baseURL = 'https://layne004.github.io/hugo-blog/'
 locale = 'zh-cn'
-title = 'layne - 个人网站'
+title = 'Layne'
 theme = 'hugo-book'
 
 copyright = "Copyright© 2026 Layne's Blog"
