@@ -25,3 +25,6 @@ weight = 10
   name = "Github"
   url = "https://github.com/alex-shpak/hugo-book/"
   weight = 30
+  
+ [imaging]
+  resampleFilter = 'Lanczos'
