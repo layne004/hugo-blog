@@ -3,6 +3,8 @@ locale = 'zh-cn'
 title = 'Layne'
 theme = 'hugo-book'
 
+enableGitInfo = true
+
 copyright = "Copyright© 2026 Layne's Blog"
 
 disablePathToLower = true
@@ -26,5 +28,13 @@ weight = 10
   url = "https://github.com/alex-shpak/hugo-book/"
   weight = 30
   
- [imaging]
+[imaging]
   resampleFilter = 'Lanczos'
+  
+[params]
+  BookRepo = "https://github.com/layne004/hugo-blog"
+
+  BookLastChangeLink = '{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}'
+
+  # Date format used in git info and blog posts
+  BookDateFormat = 'January 2, 2006'

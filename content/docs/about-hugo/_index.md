@@ -18,6 +18,8 @@ Hugo 以其极速的构建速度、强大的内容管理能力和功能丰富的
 
 [官方文档](https://hugo.opendocs.io/getting-started/)
 
-[Hugo In Action中文翻译](https://hugo-in-action.foofun.cn/zh/docs/part1/)
+[Hugo In Action 中文翻译](https://hugo-in-action.foofun.cn/zh/docs/part1/)
 
 [Hugo Actually Explained (Websites, Themes, Layouts, and Intro to Scripting)](https://www.youtube.com/watch?v=ZFL09qhKi5I)
+
+[Hugo Book Demo](https://book.alxs.dev/docs/getting-started/introduction/)
